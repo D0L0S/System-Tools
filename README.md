@@ -1,7 +1,7 @@
 System-Tools
 ============
 
-A collection of scripts and tools for system admin
+A collection of Python scripts and tools for system administration.
 
 Memory.py
 =========
