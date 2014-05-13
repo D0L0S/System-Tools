@@ -1,6 +1,7 @@
 "============================================
 "    Vim Configuration File
 "    Written 13/05/2014
+"    Based on file by: Martin Brochhaus
 "============================================
 
 " Automatic reloading of .vimrc
@@ -9,15 +10,15 @@ autocmd! bufwritepost .vimrc source %
 " Search
 nnoremap <silent> <Space> :silent noh<Bar>echo<CR> " Press space to clear search
 
-" Better copy & paste
+" Copy & Paste
 set pastetoggle=<F2>
 set clipboard=unnamed
 
-" Mouse and backspace
+" Mouse & Backspace
 set mouse=a " on OSX ALT and click
 set bs=2    " make backspace behave like normal again
 
-" Rebinder <Leader> key
+" Rebind <Leader> key
 let mapleader = ','
 
 " Quicksave command
@@ -29,9 +30,8 @@ inoremap <C-Z> <C-O>:update<CR>
 noremap <Leader>e :quit<CR> " Quit current window
 noremap <Leader>E :qa!<CR>  " Quit ALL windows
 
-" bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w
+" Bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w
 " + <movement>
-" " Every unnecessary keystroke that can be saved is good for your health :)
 map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
@@ -42,12 +42,10 @@ vnoremap <Leader>s :sort<CR>
 
 " easier moving of code blocks
 " " Try to go into visual mode (v), thenselect several lines of code here and
-" " then press ``>`` several times.
 vnoremap < <gv  " better indentation
 vnoremap > >gv  " better indentation
 
 " Enable syntax highlighting
-" You need to reload this file for the change to apply
 filetype off
 filetype plugin indent on
 syntax on
@@ -60,8 +58,7 @@ set fo-=t   " don't automatically wrap text when typing
 set colorcolumn=80
 highlight ColorColumn ctermbg=233
 
-" Real programmers don't use TABs but spaces
-" Mostly hear because Python cares on the type of white space
+" Use spaces in place of TABS, it's a Python thing
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
