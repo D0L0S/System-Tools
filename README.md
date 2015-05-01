@@ -11,3 +11,7 @@ This is a simple script to display the state of machine memory within the CLI. U
 .vimrc
 =========
 Small customisation file for Vim, contains plugin manager Pathogen and NERDTree plugin. Majority of changes are for general look and feel plus navigation. 
+
+IRC.py
+=========
+A small command line IRC client, just because. 
