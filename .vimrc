@@ -8,7 +8,10 @@
 autocmd! bufwritepost .vimrc source %
 
 " Search
-nnoremap <silent> <Space> :silent noh<Bar>echo<CR> " Press space to clear search
+noremap <silent> <Space> :silent noh<Bar>echo<CR> " Press space to clear search
+
+" don't make noise
+set noerrorbells
 
 " Copy & Paste
 set pastetoggle=<F2>
@@ -65,6 +68,8 @@ set shiftwidth=4
 set shiftround
 set expandtab
 
+" Turn on folding
+set foldenable
 
 "==================================================
 "                       PLUGINS
