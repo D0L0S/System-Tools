@@ -8,6 +8,10 @@ Memory.py
 
 This is a simple script to display the state of machine memory within the CLI. Used on a Mac with an alias it can be used in place of free command in Linux.
 
+database.py
+=========
+An oject to connect to MySQL databases and perform querys. 
+
 Tor.py
 =========
 A basic python fuction that creats a Tor proxy, this can be easily extended or added into other processes
