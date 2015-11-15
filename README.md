@@ -23,3 +23,7 @@ Small customisation file for Vim, contains plugin manager Pathogen and NERDTree 
 IRC.py
 =========
 A small command line IRC client, just because. 
+
+ServiceTemplate
+=========
+A template for creating a service. Simply change the variables at the top of the file and add it to the /etc/init.d directory and boom instant service.
