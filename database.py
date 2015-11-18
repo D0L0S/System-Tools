@@ -15,10 +15,10 @@ class EnvDatabase:
 		user='User'
 		host='127.0.0.1'
 		database='Database'
-		self.cnx = mysql.connector.connect(user=self.user, host=self.host, database=self.database)
+		self.connection = mysql.connector.connect(user=self.user, host=self.host, database=self.database)
 
 	def query(self, q):
-		cursor = self.cnx.cursor()
+		cursor = self.connection.cursor()
 		cursor.execute(q)
 		columns = tuple( [d[0].decode('utf8') for d in cursor.description] )
 		result = []
@@ -27,7 +27,7 @@ class EnvDatabase:
 		return result
 
 	def __del__(self):
-		self.cnx.close()
+		self.connection.close()
 
 
 if __name__=="__main__":
